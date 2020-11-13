@@ -75,8 +75,8 @@ World.add(world,boxrightBody);
 function keyPressed() {
  if (keyCode === DOWN_ARROW) {
     // Look at the hints in the document and understand how to make the package body fall only on
-	packageSprite.x=packageSprite.x-20
-	translation={x:-20,y:0}
+	packageSprite.y=packageSprite.y-20
+	translation={y:-20,x:0}
 	Matter.Body.translate(packageBody,translation);
   }
 }
