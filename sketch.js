@@ -77,7 +77,7 @@ function keyPressed() {
     // Look at the hints in the document and understand how to make the package body fall only on
 	packageSprite.y=packageSprite.y-20
 	translation={y:-20,x:0}
-	Matter.Body.translate(packageBody,translation);
+	Matter.Body.setStatic(packageBody,false);
   }
 }
 
